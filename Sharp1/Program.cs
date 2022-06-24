@@ -1,4 +1,4 @@
-﻿
+﻿/*
 int day;
 
 Console.Write("Input number day: ");
@@ -36,3 +36,13 @@ if(day == 1)
    {
      Console.Write("Not Found");
    }
+   */
+
+  int num, quad;
+
+  Console.Write("Input a number: ");
+  num =Convert.ToInt32(Console.ReadLine());
+
+  quad = num * num;
+
+  Console.WriteLine(quad);
