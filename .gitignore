@@ -3,10 +3,6 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-MinusToPlus/MinusToPlus.csproj
-MinusToPlus/Program.cs
-Sharp1/Program.cs
-Sharp1/Sharp1.csproj
 # User-specific files
 *.rsuser
 *.suo
