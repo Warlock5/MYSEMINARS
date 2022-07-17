@@ -126,7 +126,7 @@ int[] Fibonacci(int n)
     for (int i = 2; i < n; i++)
     {
         newArray[i] = newArray[i - 1] + newArray[i - 2];
-        
+
     }
     return newArray;
 }
@@ -135,10 +135,29 @@ void ShowArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write(array[i] + " ");
-        
+
     }
 }
 Console.Write("Input number Fibonacci: ");
 int num = Convert.ToInt32(Console.ReadLine());
 ShowArray(Fibonacci(num));
 
+//Метод Bool!!!
+
+bool Triangle(int a, int b, int c)
+{
+    if (a < b + c && b < a + c && c < a + b) return true;
+    else return false;
+}
+
+bool isTriangle = false;
+isTriangle = Triangle(1,2,3);
+
+System.Console.WriteLine(isTriangle);
+
+
+/*
+Создание типа Double
+double num = new Random().NextDouble();
+5.4 = 5.0 + 0.4
+*/
