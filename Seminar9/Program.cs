@@ -2,6 +2,7 @@
 Задайте значение N. Напишите программу, которая выведет все натуральные 
 числа в промежутке от 1 до N.
 */
+/*
 void ShowNums(int n)
 {
     if (n > 1)
@@ -14,12 +15,15 @@ void ShowNums(int n)
 }                            // потом собрать
 
 ShowNums(5);
+*/
 
 /*
 Напишите программу, которая будет принимать на вход число и 
 возвращать сумму его цифр.
 */
-void SumOfDigit(int n)
+
+/*
+int SumOfDigit(int n)
 {
     if(n >= 10)
     {
@@ -31,11 +35,13 @@ void SumOfDigit(int n)
 // 5 + 4 + 3 + 2 + 1
 ShowNums(5);
 System.Console.WriteLine();
+*/
 
 /*
 Задайте значения M и N. Напишите программу, которая выведет все 
 натуральные числа в промежутке от M до N.
 */
+/*
 void ShowNums(int n, int m)
 {
     if(n> m)
@@ -44,7 +50,7 @@ void ShowNums(int n, int m)
 }
 ShowNums(10, 5);
 Console.WriteLine();
-
+*/
 
 /*
 Напишите программу, которая на вход принимает два числа A и B, 
@@ -54,10 +60,17 @@ Console.WriteLine();
 
 int SumOfDigits(int a, int b)
 {
-    if(b>1)
+    if (b > 1)
     {
-        return a * SumOfDigits(a, b -1);
+        return a * SumOfDigits(a, b - 1);
     }
-    else return a;   
+    return a;
+
 }
-System.Console.WriteLine(SumOfDigit(2,3));
+Console.WriteLine("Input a: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input b: ");
+int b = Convert.ToInt32(Console.ReadLine());
+int res = SumOfDigits(a, b);
+Console.WriteLine(res);
+
